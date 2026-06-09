@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #F9F5F9; /* Fundo pastel bem claro */
+    background-color: #FFA500; /* Fundo laranja */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,14 +44,14 @@ body {
 }
 
 h1 {
-    color: #7D5375; /* Roxo fosco elegante para o nome */
+    color: #000000; /* Preto para o nome */
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
 .subtitle {
-    color: #A3829E; /* Tom de roxo mais suave para o subtítulo */
+    color: #000000; /* Preto para o subtítulo */
     font-size: 15px;
     font-weight: 500;
 }
@@ -71,11 +71,11 @@ h1 {
     padding: 16px 20px;
     border-radius: 50px;
     text-decoration: none;
-    background-color: #F1E6F0; /* Cor de fundo dos botões (lavanda claro) */
-    color: #7D5375; /* Texto interno combinando com o título */
+    background-color: #007BFF; /* Cor de fundo dos botões (azul) */
+    color: #FFFFFF; /* Texto branco para contraste */
     font-size: 16px;
     font-weight: 600;
-    border: 1px solid #E5D3E3; /* Borda sutil para dar o acabamento idêntico à imagem */
+    border: 1px solid #0056b3; /* Borda azul mais escura */
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
