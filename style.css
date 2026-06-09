@@ -1,0 +1,207 @@
+/* Configurações Globais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F9F5F9; /* Fundo pastel bem claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container Principal */
+.container {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+}
+
+/* Estilização do Perfil */
+.profile {
+    margin-bottom: 30px;
+}
+
+.avatar-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #EADBE9; /* Borda suave combinando com o estilo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    color: #7D5375; /* Roxo fosco elegante para o nome */
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #A3829E; /* Tom de roxo mais suave para o subtítulo */
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Estilização dos Botões de Links */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #F1E6F0; /* Cor de fundo dos botões (lavanda claro) */
+    color: #7D5375; /* Texto interno combinando com o título */
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #E5D3E3; /* Borda sutil para dar o acabamento idêntico à imagem */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Centralização e imagens menores */
+.container {
+    width: 100%;
+    max-width: 920px;
+    text-align: center;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
+}
+
+.text-block {
+    flex: 1 1 420px;
+    min-width: 280px;
+    text-align: left;
+}
+
+.text-block h1 {
+    text-align: center;
+}
+
+.image-column {
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container section {
+    margin-bottom: 0;
+}
+
+.container p {
+    margin: 12px 0;
+    line-height: 1.75;
+}
+
+.project-image {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+.project-figure {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-figure figcaption {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #7d5375;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 280px;
+}
+
+@media (max-width: 820px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .content-grid {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .text-block {
+        text-align: center;
+    }
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.link-btn:hover {
+    transform: scale(1.01);
+    background-color: #EADBE9; /* Escurece levemente ao passar o mouse */
+}
+
+/* Efeito ao clicar */
+.link-btn:active {
+    transform: scale(0.99);
+}
+
+/* Ícones de Redes Sociais (Rodapé) */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #F1E6F0; /* Círculos no mesmo tom dos botões */
+    color: #7D5375;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #E5D3E3;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: #7D5375;
+    color: #FFFFFF;
+}
